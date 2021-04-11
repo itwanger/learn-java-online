@@ -6,7 +6,7 @@
 
 ## 基础学习
 
-- [hello world](docs/hellowrold.md)
+- [hello world](docs/helloworld.md)
 - [变量和类型](docs/variable-and-type.md)
 - [条件语句](docs/condition.md)
 - [数组](docs/array.md)
