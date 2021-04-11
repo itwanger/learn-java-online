@@ -1,6 +1,6 @@
 ## HashMap
 
-![](images/collections/hashmap/01.png)
+![](../images/collections/hashmap/01.png)
 
 
 HashMap 是一个 Map，用来存储 key-value 的键值对，每个键都可以精确地映射到一个值，然后我们可以通过这个键快速地找到对应的值。
@@ -87,7 +87,7 @@ map.put("1", 1);
 
 声明一个 HashMap，然后 put 一个键值对。在 `put()` 方法处打一个断点后进入，等到该方法临近结束的时候加一个 watch（`table.length`），然后就可以观察到如下结果。
 
-![](images/collections/hashmap/02.png)
+![](../images/collections/hashmap/02.png)
 
 也就是说，数组的大小为 16，但 HashMap 的大小为 1。
 
@@ -298,7 +298,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 
 也就是说，如果哈希冲突了，会在数组的同一个位置上增加链表，如果链表的长度大于 8，将会转化成红黑树进行处理。
 
-![](images/collections/hashmap/03.png)
+![](../images/collections/hashmap/03.png)
 
 以上就是大牛们嘴里常说的“链地址法”，简单点说，就是数组加链表，由于链表的查询效率比较低（时间复杂度为 $O(n)$），Java 8 又追加了红黑树（时间复杂度为 $O(log n)$）。
 

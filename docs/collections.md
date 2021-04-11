@@ -9,7 +9,7 @@
 
 为此，整个集合框架就围绕一组标准接口而设计。你可以直接使用这些接口的标准实现，诸如： LinkedList, HashSet, 和 TreeSet 等,除此之外你也可以通过这些接口实现自己的集合。
 
-![](images/collections/01.png)
+![](../images/collections/01.png)
 
 从上面的集合框架图可以看到，Java 集合框架主要包括两种类型的容器，一种是 Collection，另一种是 Map。Collection 接口又有 3 种子类型，List、Set 和 Queue，再下面是一些抽象类，最后是具体实现类，常用的有：
 
@@ -30,7 +30,7 @@
 
 集合框架体系如图所示
 
-![](images/collections/02.png)
+![](../images/collections/02.png)
 
 Java 集合框架提供了一套性能优良，使用方便的接口和类，集合框架位于 java.util 包中。
 

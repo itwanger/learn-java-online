@@ -23,7 +23,7 @@ private static class Node<E> {
 
 LinkedList 看起来就像下面这个样子：
 
-![](images/collections/linkedlist/01.png)
+![](../images/collections/linkedlist/01.png)
 
 
 - 第一个节点由于没有前一个节点，所以 prev 为 null；
@@ -50,7 +50,7 @@ LinkedList 就摆脱了这种限制：
 
 LinkedList 类的层次结构如下图所示：
 
-![](images/collections/linkedlist/02.png)
+![](../images/collections/linkedlist/02.png)
 
 - LinkedList 是一个继承自 AbstractSequentialList 的双向链表，因此它也可以被当作堆栈、队列或双端队列进行操作。
 

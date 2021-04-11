@@ -1,25 +1,25 @@
 
 ## ArrayList
 
-![](images/collections/arraylist/01.png)
+![](../images/collections/arraylist/01.png)
 
 ArrayList 实现了 List 接口，是基于数组实现的。小伙伴们都知道，数组的大小是固定的，创建的时候指定了大小，就不能再调整了，如果数组满了，就不能再添加任何元素了。ArrayList 是数组很好的替代方案，它提供了比数组更丰富的预定义方法（增删改查），并且大小是可以根据元素的多少进行自动调整的，非常灵活。
 
 准备在 ArrayList 的第四个位置（下标为 3）上添加一个元素 55。
 
-![](images/collections/arraylist/02.png)
+![](../images/collections/arraylist/02.png)
 
 此时 ArrayList 中第五个位置以后的元素将会向后移动。
 
-![](images/collections/arraylist/03.png)
+![](../images/collections/arraylist/03.png)
 
 准备把 23 从 ArrayList 中移除。
 
-![](images/collections/arraylist/04.png)
+![](../images/collections/arraylist/04.png)
 
 此时下标为 7、8、9 的元素往前挪。
 
-![](images/collections/arraylist/05.png)
+![](../images/collections/arraylist/05.png)
 
 ### 01、如何创建一个 ArrayList 
 

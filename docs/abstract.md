@@ -16,7 +16,7 @@ public abstract class AbstractPlayer {
 
 尝试通过 `new` 关键字实例化的话，编译器会报错，提示“类是抽象的，不能实例化”。
 
-![](images/abstract/01.png)
+![](../images/abstract/01.png)
 
 通过 `extends` 关键字可以继承抽象类，继承后，BasketballPlayer 类就是 AbstractPlayer 的子类。
 
@@ -31,11 +31,11 @@ public class BasketballPlayer extends AbstractPlayer {
 
 第一处在类级别上，提醒你“这个类必须通过 `abstract` 关键字定义”，or 的那个信息没必要，见下图。
 
-![](images/abstract/02.png)
+![](../images/abstract/02.png)
 
 第二处在方法级别上，提醒你“抽象方法所在的类不是抽象的”，见下图。
 
-![](images/abstract/03.png)
+![](../images/abstract/03.png)
 
 4）抽象类可以同时声明抽象方法和具体方法，也可以什么方法都没有，但没必要。就像下面这样：
 
@@ -62,7 +62,7 @@ public class BasketballPlayer extends AbstractPlayer {
 
 如果没有实现的话，编译器会提醒你“子类必须实现抽象方法”，见下图。
 
-![](images/abstract/04.png)
+![](../images/abstract/04.png)
 
 ### 02、什么时候用抽象类
 
@@ -231,7 +231,7 @@ public class FileReaderTest {
 
 项目的 resource 目录下有一个文本文件，名字叫 helloworld.txt。
 
-![](images/abstract/05.png)
+![](../images/abstract/05.png)
 
 
 可以通过 `ClassLoader.getResource()` 的方式获取到该文件的 URI 路径，然后就可以使用 LowercaseFileReader 和 UppercaseFileReader 两种方式读取到文本内容了。

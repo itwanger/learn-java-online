@@ -52,7 +52,7 @@ Java 官方文档上有这样的声明：
 
 4）接口中允许定义 `default` 方法也是从 Java 8 开始的，比如说 `printDescription()`，它始终由一个代码块组成，为实现该接口而不覆盖该方法的类提供默认实现，也就是说，无法直接使用一个“;”号来结束默认方法——编译器会报错的。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-68bde3d324ab5d44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/interface/01.png)
 
 允许在接口中定义默认方法的理由是很充分的，因为一个接口可能有多个实现类，这些类就必须实现接口中定义的抽象类，否则编译器就会报错。假如我们需要在所有的实现类中追加某个具体的方法，在没有 `default` 方法的帮助下，我们就必须挨个对实现类进行修改。
 
@@ -92,7 +92,7 @@ public interface Electronic
 
 1）接口不允许直接实例化。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-4a3a762eae494531.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/interface/02.png)
 
 需要定义一个类去实现接口，然后再实例化。
 
@@ -121,15 +121,15 @@ Serializable 是最典型的一个空的接口。
 
 3）不要在定义接口的时候使用 final 关键字，否则会报编译错误，因为接口就是为了让子类实现的，而 final 阻止了这种行为。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-25bbbe251b2d4e77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/interface/03.png)
 
 4）接口的抽象方法不能是 private、protected 或者 final。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-c385bee5b112fde3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/interface/04.png)
 
-![](https://upload-images.jianshu.io/upload_images/1179389-71a24aff16c3f3c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/interface/05.png)
 
-![](https://upload-images.jianshu.io/upload_images/1179389-3d2f21dcc78e39f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/interface/06.png)
 
 5）接口的变量是隐式 `public static final`，所以其值无法改变。
 
@@ -188,7 +188,7 @@ Exception in thread "main" java.lang.CloneNotSupportedException: com.cmower.bael
 
 如果有两个类共同继承（extends）一个有特定方法的父类，那么该方法会被两个子类重写。然后，如果你决定同时继承这两个子类，那么在你调用该重写方法时，编译器不能识别你要调用哪个子类的方法。这也正是著名的菱形问题，见下图。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-da9057082e43aad1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](../images/interface/07.png)
 
 ClassC 同时继承了 ClassA 和 ClassB，ClassC 的对象在调用 ClassA 和 ClassB 中重载的方法时，就不知道该调用 ClassA 的方法，还是 ClassB 的方法。
 

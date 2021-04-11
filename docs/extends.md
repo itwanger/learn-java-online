@@ -72,7 +72,7 @@ public class Wanger {
 
 在子类 Wangxiaoer 中定义一个测试方法 `testVariable()`：
 
-![](images/extends/01.png)
+![](../images/extends/01.png)
 
 可以确认，除了私有的 privateName，其他三种类型的成员变量都可以继承到。
 
@@ -98,7 +98,7 @@ public class Wanger {
 
 在子类 Wangxiaoer 中定义一个 main 方法，并使用 new 关键字新建一个子类对象：
 
-![](images/extends/02.png)
+![](../images/extends/02.png)
 
 可以确认，除了私有的 privateWrite()，其他三种类型的方法都可以继承到。
 
@@ -118,7 +118,7 @@ public class Wanger {
 
 则必须在子类的构造器中显式地通过 super 关键字进行调用，否则编译器将提示以下错误：
 
-![](images/extends/03.png)
+![](../images/extends/03.png)
 
 修复后的代码如下所示：
 
@@ -180,7 +180,7 @@ public interface RunInterface {
 
 Pig 类实现了 FlyInterface 和 RunInterface 两个接口，但这时候编译出错了。
 
-![](images/extends/04.png)
+![](../images/extends/04.png)
 
 原本，default 方法就是为实现该接口而不覆盖该方法的类提供默认实现的，现在，相同方法签名的 `sleep()` 方法把编译器搞懵逼了，只能重写了。
 
