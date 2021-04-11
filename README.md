@@ -17,14 +17,13 @@
 
 ## 高级主题
 
-- 继承
-- 捕获异常
-- 抽象类
-- 接口
-- 泛型
-- 集合
-- 自动装箱
-- 流
+- [继承](docs/extends.md)
+- [异常](docs/exception.md)
+- [抽象类](docs/abstract.md)
+- [接口](docs/interface.md)
+- [泛型](docs/fanxing.md)
+- [集合框架](docs/collections.md)
+- IO流
 
 # 公众号
 
