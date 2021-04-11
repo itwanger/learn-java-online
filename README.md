@@ -23,7 +23,7 @@
 - [接口](docs/interface.md)
 - [泛型](docs/fanxing.md)
 - [集合框架](docs/collections.md)
-- IO流
+- [IO流](docs/io.md)
 
 # 公众号
 
