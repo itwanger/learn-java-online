@@ -7,13 +7,13 @@
 ## 基础学习
 
 - [hello world](docs/hellowrold.md)
-- 变量和类型
-- 条件语句
-- 数组
-- 循环语句
-- 方法
-- 对象
-- 编译和运行参数
+- [变量和类型](docs/variable-and-type.md)
+- [条件语句](docs/condition.md)
+- [数组](docs/array.md)
+- [循环语句](docs/loop.md)
+- [方法](docs/method.md)
+- [对象](docs/object.md)
+- [编译和运行](docs/javac-java.md)
 
 ## 高级主题
 
